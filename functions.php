@@ -150,22 +150,40 @@ function ea_child_theme_setup() {
 	// -- Editor Font Styles
 	add_theme_support( 'editor-font-sizes', array(
 		array(
-			'name'      => __( 'Small', 'ea_genesis_child' ),
-			'shortName' => __( 'S', 'ea_genesis_child' ),
+			'name'      => __( 'Tiny', 'setup_be' ),
+			'shortName' => __( 'T', 'setup_be' ),
+			'size'      => 12,
+			'slug'      => 'tiny'
+		),
+		array(
+			'name'      => __( 'Small', 'setup_be' ),
+			'shortName' => __( 'S', 'setup_be' ),
 			'size'      => 14,
 			'slug'      => 'small'
 		),
 		array(
-			'name'      => __( 'Normal', 'ea_genesis_child' ),
-			'shortName' => __( 'M', 'ea_genesis_child' ),
-			'size'      => 20,
+			'name'      => __( 'Normal', 'setup_be' ),
+			'shortName' => __( 'N', 'setup_be' ),
+			'size'      => 16,
 			'slug'      => 'normal'
 		),
 		array(
-			'name'      => __( 'Large', 'ea_genesis_child' ),
-			'shortName' => __( 'L', 'ea_genesis_child' ),
+			'name'      => __( 'Medium', 'setup_be' ),
+			'shortName' => __( 'M', 'setup_be' ),
 			'size'      => 24,
+			'slug'      => 'medium'
+		),
+		array(
+			'name'      => __( 'Large', 'setup_be' ),
+			'shortName' => __( 'L', 'setup_be' ),
+			'size'      => 36,
 			'slug'      => 'large'
+		),
+		array(
+			'name'      => __( 'Huge', 'setup_be' ),
+			'shortName' => __( 'H', 'setup_be' ),
+			'size'      => 48,
+			'slug'      => 'huge'
 		),
 	) );
 
