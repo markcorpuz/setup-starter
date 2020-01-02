@@ -12,8 +12,13 @@
 @import "partials/post-summary";
 @import "partials/archive";
 @import "partials/singular";
-@import "partials/site-footer";
-
+//@import "partials/site-footer";	replaced by SETUP-STARTER
 
 // -------------------------------------------------------------------- TYPE | 2019-12-24		SETUP-STARTER
 @import 	"type/3210_setup-starter/fontsize";
+
+// -------------------------------------------------------------------- FOOTER | 2019-12-26		SETUP-STARTER
+@import 	"footer/3210_setup-starter/footer";
+
+// -------------------------------------------------------------------- CREDIT | 2019-09-28		SETUP-STARTER
+@import 	"credit/3210_setup-starter/credit-swp";
