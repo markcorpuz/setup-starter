@@ -171,15 +171,6 @@ img {
 --------------------------------------------- */
 
 .wp-block-group {
-	padding: 40px 16px;
-
-	@include media(">=tablet") {
-		padding: 60px 16px;
-	}
-
-	@include media(">=medium") {
-		padding: 70px 16px;
-	}
 
 	.wp-block-group__inner-container {
 		max-width: $content_width;
