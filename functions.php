@@ -188,15 +188,12 @@ function ea_child_theme_setup() {
 		),
 	) );
 
-	// -- Disable Custom Colors
-	add_theme_support( 'disable-custom-colors' );
-
 	// -- Editor Color Palette
 	add_theme_support( 'editor-color-palette', array(
 		array(
 			'name'  => __( 'Blue', 'ea_genesis_child' ),
 			'slug'  => 'blue',
-			'color'	=> '#05306F',
+			'color'	=> '#56a5e5',
 		),
 		array(
 			'name'  => __( 'Grey', 'ea_genesis_child' ),

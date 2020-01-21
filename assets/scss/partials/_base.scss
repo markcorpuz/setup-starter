@@ -14,8 +14,12 @@ $black: #000;
 
 // Brand Colors
 $brand_colors: (
-	'blue'	: #05306F,
-	'grey'	: $grey_1,
+  'red'     : #e5565b,
+  'orange'  : #e59856,
+  'yellow'  : #ffff00,
+  'green'   : #a2e556,
+  'blue'    : #56a5e5,
+  'grey'    : $grey_1,
 );
 @import "../modules/brand-color";
 
@@ -33,7 +37,7 @@ $sans-serif: "Rubik", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-
 
 // Content
 $content-width: 768px;
-$block-margin: 20px;
+$block-margin: 16px;
 
 // Grid
 $grid: grid;
