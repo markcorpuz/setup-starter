@@ -14,12 +14,14 @@ $black: #000;
 
 // Brand Colors
 $brand_colors: (
-  'red'     : #e5565b,
-  'orange'  : #e59856,
-  'yellow'  : #ffff00,
-  'green'   : #a2e556,
-  'blue'    : #56a5e5,
-  'grey'    : $grey_1,
+  'blue'      : #56a5e5,    // first color in array used for default button color
+  'red'       : #e5565b,
+  'orange'    : #e59856,
+  'yellow'    : #ffff00,
+  'green'     : #a2e556,
+  'lightgrey' : $grey_2,
+  'grey'      : $grey_5,
+  'darkgrey'  : $grey_8,
 );
 @import "../modules/brand-color";
 

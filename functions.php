@@ -196,9 +196,39 @@ function ea_child_theme_setup() {
 			'color'	=> '#56a5e5',
 		),
 		array(
+			'name'  => __( 'Red', 'ea_genesis_child' ),
+			'slug'  => 'red',
+			'color'	=> '#e5565b',
+		),
+		array(
+			'name'  => __( 'Orange', 'ea_genesis_child' ),
+			'slug'  => 'orange',
+			'color'	=> '#e59856',
+		),
+		array(
+			'name'  => __( 'Yellow', 'ea_genesis_child' ),
+			'slug'  => 'yellow',
+			'color'	=> '#ffff00',
+		),
+		array(
+			'name'  => __( 'Green', 'ea_genesis_child' ),
+			'slug'  => 'green',
+			'color'	=> '#a2e556',
+		),
+		array(
+			'name'  => __( 'Light Grey', 'ea_genesis_child' ),
+			'slug'  => 'lightgrey',
+			'color' => '#F5F5F5',
+		),
+		array(
 			'name'  => __( 'Grey', 'ea_genesis_child' ),
 			'slug'  => 'grey',
-			'color' => '#FAFAFA',
+			'color' => '#BDBDBD',
+		),
+		array(
+			'name'  => __( 'Dark Grey', 'ea_genesis_child' ),
+			'slug'  => 'darkgrey',
+			'color' => '#616161',
 		),
 	) );
 
