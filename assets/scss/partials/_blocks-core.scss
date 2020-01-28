@@ -4,13 +4,37 @@
 $default: nth( nth( $brand_colors, 1 ), 1 ); // first color in $brand_colors array
 
 .wp-block-button__link {
-	border: 2px solid brand-color( $default, 'darken' );
+	//border: 2px solid brand-color( $default, 'darken' );
 	border-radius: 3px;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 700;
 	line-height: 32px;
 	padding: 16px 32px;
 	text-decoration: none;
+
+	.tiny & {
+		font-size: 0.75rem;
+		line-height: 24px;
+		padding: 4px 8px;
+	}
+
+	.small & {
+		font-size: 0.875rem;
+		line-height: 28px;
+		padding: 8px 16px;
+	}
+
+	.medium & {
+		font-size: 1.5rem;
+		line-height: 32px;
+		padding: 24px 32px;
+	}
+
+	.large & {
+		font-size: 2.25rem;
+		line-height: 48px;
+		padding: 32px 48px;
+	}
 
 	.is-style-full &,
 	&.full {
