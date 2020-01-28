@@ -126,6 +126,7 @@ function ea_child_theme_setup() {
 
 	// Plugin Support
 	include_once( get_stylesheet_directory() . '/inc/acf.php' );
+	include_once( get_stylesheet_directory() . '/inc/acf-setup-starter.php' );
 	include_once( get_stylesheet_directory() . '/inc/amp.php' );
 	include_once( get_stylesheet_directory() . '/inc/shared-counts.php' );
 	include_once( get_stylesheet_directory() . '/inc/wpforms.php' );
