@@ -903,6 +903,35 @@ div.wpforms-container.one-line:after {
 .fontsize-tiny, .sitefor, .credit-designby {
   font-size: 0.75rem; }
 
+/* SETUP | FOOTER | 3210_SETUP-STARTER | FOOTER - 2020-01-17 */
+.footer-widgets {
+  padding: 2rem;
+  background-color: #f3f3f3;
+  position: relative; }
+  .footer-widgets ul {
+    margin-bottom: 1rem; }
+  .footer-widgets li {
+    list-style-type: none;
+    margin-bottom: 12px; }
+  @media (min-width: 768px) {
+    .footer-widgets .wrap > div {
+      float: left;
+      margin-left: 2.7397260274%;
+      width: 31.5068493151%; }
+      .footer-widgets .wrap > div:nth-of-type(3n+1) {
+        clear: both;
+        margin-left: 0; }
+    @supports (display: grid) {
+      .footer-widgets .wrap {
+        display: grid;
+        grid-column-gap: 32px;
+        grid-template-columns: repeat(3, 1fr); }
+        .footer-widgets .wrap > div {
+          margin-left: 0;
+          width: 100%; }
+        .footer-widgets .wrap header, .footer-widgets .wrap nav, .footer-widgets .wrap aside, .footer-widgets .wrap footer {
+          grid-column: 1 / -1; } } }
+
 /* SETUP | FOOTER | 3210_SETUP-STARTER | FOOTER - 2020-01-15 */
 .site-footer {
   padding: 2rem;
@@ -956,3 +985,29 @@ div.wpforms-container.one-line:after {
     margin-left: auto; }
     .siteby a:hover {
       text-decoration: none; }
+
+/* SETUP | UI | 3210_SETUP-STARTER | LABEL - 2019-01-24 */
+.guide-label, .guide-label2, .guide-label.tab, .guide-label.end, .guide-label2.tab, .guide-label2.end, .guide-summary {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  color: white;
+  background-color: #e5565d;
+  display: block; }
+
+.guide-label2, .guide-label2.tab, .guide-label2.end {
+  color: #999;
+  background-color: #f0f0f0; }
+
+.guide-label.tab, .guide-label2.tab {
+  display: inline-block; }
+
+.guide-label.end, .guide-label2.end {
+  float: right;
+  clear: both; }
+
+.guide-summary {
+  font-weight: 400;
+  color: #333;
+  background-color: #eee;
+  border-left: 5px solid #e5565d; }
