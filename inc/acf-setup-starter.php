@@ -34,6 +34,16 @@ function ss_block_acf_init() {
     		'mode'			    => 'edit',
     		'keywords'		    => array( 'update', 'log' ),
         ),
+      
+        'feature' => array(
+            'name'              => 'feature_display',
+            'title'             => __('Feature'),
+            'render_template'   => 'partials/blocks/block-feature-setup-starter.php',
+            'category'          => 'setup_starter',
+            'icon'              => 'list-view',
+            'mode'              => 'edit',
+            'keywords'          => array( 'feature', 'highlight' ),
+        ),
         
     );
 

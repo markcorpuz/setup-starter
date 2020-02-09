@@ -263,3 +263,115 @@ function ea_template_hierarchy( $template ) {
 	return $template;
 }
 add_filter( 'template_include', 'ea_template_hierarchy' );
+
+
+/**
+ * SETUP-STARTER
+ * Populate dropdown
+ * Defining template
+ * 
+ */
+if( ! function_exists( 'setup_starter_acf_pull_template' ) ) {
+    
+    function setup_starter_acf_pull_template( $field ) {
+        
+/*        // check available templates from:
+        $setup_template_dir = get_stylesheet_directory().'/partials/blocks/setup_starter_views/';
+        $source = file_get_contents( $setup_template_dir."setup-starter-one.php" );
+    
+        $tokens = token_get_all( $source );
+        $comment = array(
+            T_COMMENT,      // All comments since PHP5
+            T_ML_COMMENT,   // Multiline comments PHP4 only
+            T_DOC_COMMENT   // PHPDoc comments      
+        );
+        foreach( $tokens as $token ) {
+            if( !in_array($token[0], $comment) )
+                continue;
+            // Do something with the comment
+            echo $token[1];
+        }
+*/
+
+        $field['default_value'] = array( 'template-feature-display-all.php' => 'Feature: Display All', );
+        
+        $field['choices'] = array(
+        	'template-feature-display-all.php' 								=> 'Feature: Display All',
+			'template-feature-incolumn-alpha.php' 							=> 'InColumn Alpha',
+        );
+        
+        if( is_array($choices) ) {
+            
+            foreach( $choices as $choice ) {
+                $field['choices'][ $choice ] = $choice;
+            }
+            
+        }
+    	
+    	// return the field
+    	return $field;  
+    }
+    
+}
+
+/**
+ * POPULATE DROPDOWN
+ */
+if( ! function_exists( 'setup_starter_acf_populate_checkboxes' ) ) {
+    
+    function setup_starter_acf_populate_checkboxes( $field ) {
+
+        $field['default_value'] = array( 'post_title' => 'Title', );
+        
+        $field['choices'] = array(
+            'post_id'                   => 'ID', // done
+            'post_author'               => 'Author Name', // done
+            'post_author_avatar'        => 'Author Avatar', // done
+            'post_author_desc'          => 'Author Description', // done
+//            post_date_gmt
+            'post_content'              => 'Content', // done
+            'post_title'                => 'Title', // done
+            'post_excerpt'              => 'Excerpt', // done
+//            'post_status'               => 'Post Status',
+//            comment_status
+//            ping_status
+//            post_password
+            'post_name'                 => 'Post Name (Slug)', // done
+//            to_ping
+//            pinged
+            'post_date'                 => 'Date Published', // done
+            'post_modified'             => 'Date Modified', // done
+//            post_modified_gmt
+//            post_content_filtered
+//            post_parent
+//            guid
+//            menu_order
+            'post_type'                 => 'Post Type', // done
+//            post_mime_type
+//            comment_count
+//            filter
+            'post_thumbnail'            => 'Featured Image', // done
+            'post_category'             => 'Category', // done
+            'post_tag'                  => 'Tags', // done
+        );
+        
+        if( is_array($choices) ) {
+            
+            foreach( $choices as $choice ) {
+                $field['choices'][ $choice ] = $choice;
+            }
+            
+        }
+    	
+    	// return the field
+    	return $field;
+    	
+    }
+    
+}
+
+// load if is_admin only
+if( is_admin() ) {
+    add_filter('acf/load_field/name=pull_template', 'setup_starter_acf_pull_template'); // TEMPLATE
+    add_filter('acf/load_field/name=select_fields_to_show', 'setup_starter_acf_populate_checkboxes'); // TEMPLATE
+}
