@@ -863,7 +863,16 @@ div.wpforms-container.one-line:after {
     .comment-respond input[type="submit"] {
       width: auto; } }
 
-/* SETUP | TYPE | 3210_SETUP-STARTER | SIZE - 2019-12-24 */
+/* SETUP | TYPE | 3210_SETUP-STARTER | SIZE - 2020-02-12 */
+.fontsize-xhuge {
+  font-size: 3.25rem; }
+  @media (min-width: 768px) {
+    .fontsize-xhuge {
+      font-size: 3.625rem; } }
+  @media (min-width: 992px) {
+    .fontsize-xhuge {
+      font-size: 4rem; } }
+
 .fontsize-huge {
   font-size: 2.25rem; }
   @media (min-width: 768px) {
@@ -972,6 +981,45 @@ div.wpforms-container.one-line:after {
     .siteby a:hover {
       text-decoration: none; }
 
+/* SETUP | BLOCK-CUSTOM | 3210_SETUP-STARTER | CUSTOM - 2020-02-12 */
+p.has-background {
+  padding: 1.5rem; }
+
+/* SETUP | BLOCK | 3210_SETUP-STARTER | IMAGES - 2020-01-28 */
+figure {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem; }
+  figure.margin-zero-top {
+    margin-block-start: 0; }
+  figure.margin-zero {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0; }
+  figure.hide-figcaption figcaption {
+    display: none; }
+
+/* SETUP | BLOCK | 3210_SETUP-STARTER | COVER - 2020-02-11 */
+.wp-block-cover.fullscreen {
+  height: 100vh; }
+
+.wp-block-cover p {
+  line-height: 1.2; }
+
+.wp-block-cover.inner-container_smaller .wp-block-cover__inner-container {
+  max-width: 425px; }
+
+.wp-block-cover.inner-container_small .wp-block-cover__inner-container {
+  max-width: 768px; }
+
+.wp-block-cover.inner-container_medium .wp-block-cover__inner-container {
+  max-width: 992px; }
+
+.wp-block-cover.inner-container_large .wp-block-cover__inner-container {
+  max-width: 1200px; }
+
 /* SETUP | UI | 3210_SETUP-STARTER | LABEL - 2019-02-05 */
 .guide-label, .guide-label2, .guide-label.tab, .guide-label.end, .guide-label2.tab, .guide-label2.end, .guide-summary {
   font-size: 0.75rem;
@@ -1005,6 +1053,60 @@ div.wpforms-container.one-line:after {
 .guide-highlight2 {
   padding-left: 10px;
   border-left: 5px solid #eee; }
+
+/* SETUP | UI | 3210_SETUP-STARTER | SPACE - 2019-01-28 */
+/* SETUP | UI | 3210_SETUP-STARTER | GRID - 2020-01-25 */
+.grid-3columns, .wp-block-group.grid-3columns-group > .wp-block-group__inner-container,
+.wp-block-group.group-grid-3columns > .wp-block-group__inner-container {
+  display: grid; }
+
+.grid-3columns, .wp-block-group.grid-3columns-group > .wp-block-group__inner-container,
+.wp-block-group.group-grid-3columns > .wp-block-group__inner-container {
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem; }
+
+.grid-3columns, .wp-block-group.grid-3columns-group > .wp-block-group__inner-container,
+.wp-block-group.group-grid-3columns > .wp-block-group__inner-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 992px) {
+    .grid-3columns, .wp-block-group.grid-3columns-group > .wp-block-group__inner-container,
+    .wp-block-group.group-grid-3columns > .wp-block-group__inner-container {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 425px) {
+    .grid-3columns, .wp-block-group.grid-3columns-group > .wp-block-group__inner-container,
+    .wp-block-group.group-grid-3columns > .wp-block-group__inner-container {
+      grid-template-columns: 1fr; } }
+
+/* SETUP | UI | 3210_SETUP-STARTER | FLEX - 2020-02-04 */
+.flex-lefttoright .wp-block-group__inner-container {
+  display: flex;
+  flex-direction: row; }
+
+/* SETUP | UI | 3210_SETUP-STARTER | MARGIN-BASIC - 2020-01-28 */
+.margin, .margin-y, .margin-top {
+  margin-top: 1rem; }
+
+.margin-zero, .margin-zero-y, .margin-zero-top {
+  margin-top: 0; }
+
+.margin, .margin-bottom {
+  margin-bottom: 1rem; }
+
+.margin-zero, .margin-zero-y, .margin-zero-bottom {
+  margin-bottom: 0; }
+
+.margin, .margin-x, .margin-left {
+  margin-left: 1rem; }
+
+.margin-zero, .margin-zero-x, .margin-zero-left {
+  margin-left: 0; }
+
+.margin, .margin-x, .margin-right {
+  margin-right: 1rem; }
+
+.margin-zero, .margin-zero-x, .margin-zero-right {
+  margin-right: 0; }
 
 /* SETUP | BLOCK-CUSTOM | 3210_SETUP-STARTER | LOG - 2020-02-01 */
 .log.module {
