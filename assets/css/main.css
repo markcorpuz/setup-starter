@@ -863,7 +863,16 @@ div.wpforms-container.one-line:after {
     .comment-respond input[type="submit"] {
       width: auto; } }
 
-/* SETUP | TYPE | 3210_SETUP-STARTER | SIZE - 2019-12-24 */
+/* SETUP-STARTER | TYPE | 3210_SETUP-STARTER | FONTSIZE - 2020-02-14 */
+.fontsize-xhuge {
+  font-size: 3.25rem; }
+  @media (min-width: 768px) {
+    .fontsize-xhuge {
+      font-size: 3.625rem; } }
+  @media (min-width: 992px) {
+    .fontsize-xhuge {
+      font-size: 4rem; } }
+
 .fontsize-huge {
   font-size: 2.25rem; }
   @media (min-width: 768px) {
@@ -935,7 +944,26 @@ div.wpforms-container.one-line:after {
 .incontent .item.category, .incolumn-alpha .item.category {
   font-size: 0.75rem; }
 
-/* SETUP | FOOTER | 3210_SETUP-STARTER | FOOTER - 2020-02-06 */
+/* SETUP-STARTER | TYPE | 3210_SETUP-STARTER | FONTSIZE - 2020-02-14 */
+.fontweight-300 {
+  font-weight: 300; }
+
+.fontweight-400 {
+  font-weight: 400; }
+
+.fontweight-500 {
+  font-weight: 500; }
+
+.fontweight-600 {
+  font-weight: 600; }
+
+.fontweight-700 {
+  font-weight: 700; }
+
+.fontweight-900 {
+  font-weight: 900; }
+
+/* SETUP-STARTER | FOOTER | 3210_SETUP-STARTER | FOOTER - 2020-02-12 */
 .footer-widgets {
   padding: 2rem;
   background-color: #f3f3f3;
@@ -955,7 +983,7 @@ div.wpforms-container.one-line:after {
       .footer-widgets .wrap {
         grid-template-columns: 1fr; } }
 
-/* SETUP | FOOTER | 3210_SETUP-STARTER | FOOTER - 2020-01-15 */
+/* SETUP-STARTER | FOOTER | 3210_SETUP-STARTER | FOOTER - 2020-02-12 */
 .site-footer {
   padding: 2rem;
   -webkit-box-shadow: inset 5px 15px 10px -15px rgba(0, 0, 0, 0.15);
@@ -974,7 +1002,7 @@ div.wpforms-container.one-line:after {
 .footer-menu > .wrap:after {
   display: none; }
 
-/* SETUP | CREDIT | 3210_SETUP-STARTER | CREDIT-SWP - 2020-01-17 */
+/* SETUP-STARTER | CREDIT | 3210_SETUP-STARTER | CREDIT-SWP - 2020-02-12 */
 .sitefor {
   line-height: 1.4;
   display: block; }
