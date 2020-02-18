@@ -14,27 +14,28 @@
 @import "partials/singular";
 //@import "partials/site-footer";	replaced by SETUP-STARTER
 
-// -------------------------------------------------------------------- TYPE | 2019-12-24			SETUP-STARTER
+// -------------------------------------------------------------------- TYPE | 2020-02-14			SETUP-STARTER
 @import 	"type/3210_setup-starter/fontsize";
+@import 	"type/3210_setup-starter/fontweight";
 
-// -------------------------------------------------------------------- FOOTER | 2019-12-26			SETUP-STARTER
+// -------------------------------------------------------------------- FOOTER | 2020-02-12			SETUP-STARTER
 @import 	"footer/3210_setup-starter/footer-widgets";
 @import 	"footer/3210_setup-starter/footer";
 
-// -------------------------------------------------------------------- CREDIT | 2019-09-28			SETUP-STARTER
+// -------------------------------------------------------------------- CREDIT | 2020-02-12			SETUP-STARTER
 @import 	"credit/3210_setup-starter/credit-swp";
 
-// -------------------------------------------------------------------- BLOCK | 2020-02-11			SETUP-STARTER
-@import 	"block/3210_setup-starter/content";
+// -------------------------------------------------------------------- BLOCK | 2020-02-12			SETUP-STARTER
+@import 	"block/3210_setup-starter/text";
 @import 	"block/3210_setup-starter/images";
 @import 	"block/3210_setup-starter/cover";
 
-// -------------------------------------------------------------------- UI | 2020-02-09				SETUP-STARTER
+// -------------------------------------------------------------------- UI | 2020-02-12				SETUP-STARTER
 @import 	"ui/3210_setup-starter/label";
 @import 	"ui/3210_setup-starter/space";
 @import 	"ui/3210_setup-starter/grid";
 @import 	"ui/3210_setup-starter/flex";
 @import 	"ui/3210_setup-starter/margin-basic";
 
-// -------------------------------------------------------------------- BLOCK-CUSTOM | 2020-01-24	SETUP-STARTER
+// -------------------------------------------------------------------- BLOCK-CUSTOM | 2020-02-12	SETUP-STARTER
 @import 	"block-custom/3210_setup-starter/log";

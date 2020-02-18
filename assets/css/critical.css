@@ -661,6 +661,8 @@ h6 {
     .title-area p.site-title a {
       color: #424242;
       text-decoration: none; }
+  .title-area .custom-logo-link {
+    max-width: 300px; }
   @media (max-width: 768px) {
     .title-area {
       float: none;
