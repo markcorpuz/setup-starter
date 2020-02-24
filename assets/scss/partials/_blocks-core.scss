@@ -208,10 +208,10 @@ img {
 
 	// Dark background
 	&.has-background:not(.has-grey-background-color) {
-		color: $white;
+		//color: $white;
 
 		h1, h2, h3, h4, h5, h6, p {
-			color: $white;
+			//color: $white;
 		}
 	}
 }
